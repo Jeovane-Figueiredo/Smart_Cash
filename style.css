@@ -1,0 +1,364 @@
+/*criando variaveis a serem usadas no código*/
+:root {
+    --branco-logo: #FFFFFF;
+    --preto-logo: #000000;
+    --preto-background: #000000;
+    --cinza-background: #EAE7DB;
+    --amarelo-principal: #FBFF2C;
+    --fonte-principal: 'Roboto';
+}
+
+/*definindo cor do background e fonte padrão*/
+.body{
+    background-color: var(--cinza-background);
+    font-family: var(--fonte-principal);
+    
+}
+
+/*alinhando elementos header*/
+.div_header{
+    margin-top: 30px;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*estilizando logo*/
+.logo{
+    font-family: var(--fonte-principal);
+    font-size: 50px;
+    font-weight: 900;
+    margin-left: 200px;
+    cursor: pointer;
+}
+
+/*definindo posição da lupa de pesquisa e deixando como elemento clicável*/
+.pesquisar{
+    margin-left: 500px;
+    cursor: pointer;
+}
+
+/*definindo posição da foto de usuário e deixando como elemento clicável*/
+.usuario{
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+/*posicionando botão de expandir menu*/
+.expandir_menu{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content:end;
+    margin-right: 196px;
+    margin-top: none;
+    margin-bottom: 100px;
+}
+
+/*definindo posição do botão de epandir menu e deixando como elemento clicável*/
+.expandir_perfil{
+    cursor: pointer;
+    
+}
+
+/*estilizando e determinando posição de mensagem de boas vindas*/
+.mensagem_boasVindas{
+    font-size: 35px;
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    margin-left: 200px;
+    margin-top: 20px;
+    margin-bottom: 75px ;
+}
+
+/*alinhando menu de navegação do site*/
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*estilizando botão home*/
+.div_home{
+    width: 62px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.30);
+    background: #BFBEB9;
+    cursor: pointer;
+}
+
+/*estilizando botão home*/
+.home{
+    color: var(--preto-logo);
+    text-align: center;
+    font-size: 12px;
+    font-family: var(--fonte-principal);
+    font-style: normal;
+    font-weight: 100;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+/*estilizando botão anexar*/
+.div_anexar{
+    width: 62px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.30);
+    background: var(--cinza-background);
+    cursor: pointer;
+}
+
+/*estilizando botão anexar*/
+.anexar{
+    color: var(--preto-logo);
+    text-align: center;
+    font-size: 12px;
+    font-family: var(--fonte-principal);
+    font-style: normal;
+    font-weight: 100;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+/*estilizando botão contas*/
+.div_contas{
+    width: 62px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.30);
+    background: var(--cinza-background);
+    cursor: pointer;
+}
+
+/*estilizando botão contas*/
+.contas{
+    color: var(--preto-logo);
+    text-align: center;
+    font-size: 12px;
+    font-family: var(--fonte-principal);
+    font-style: normal;
+    font-weight: 100;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+/*estilizando botão extrato*/
+.div_extrato{
+    width: 62px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.30);
+    background: var(--cinza-background);
+    cursor: pointer;
+}
+
+/*estilizando botão extrato*/
+.extrato{
+    color: var(--preto-logo);
+    text-align: center;
+    font-size: 12px;
+    font-family: var(--fonte-principal);
+    font-style: normal;
+    font-weight: 100;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+/*estilizando e definindo tamanho e posição do container de dashboard*/
+.container_dashboard{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    background: var(--amarelo-principal);
+    width: 900px;
+    height: 600px;
+    flex-shrink: 0;
+    border-radius: 60px;
+    margin-left: 170px;
+    flex-wrap: wrap;
+}
+
+/*alinhando elementos dentro do container de dash*/
+.div_container{
+    display: flex;
+    margin-top: 10px;
+    height: 120px;
+    width: 900px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*definando tamanho de icone de gráfico*/
+.graficos{
+    margin-left: 50px;
+    height: 40px;
+    width: 40px;
+}
+
+/*estilizando e definindo posição de mensagem para irformar gastos*/
+.gastos_mensais{
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    font-style: normal;
+    margin-left: 35px;
+}
+
+/*estilizando input*/
+.input_gastos{
+    background-color:transparent;
+    border-color: var(--preto-background);
+    border-bottom-style: 1px;
+    border-top-style:none;
+    border-left-style: none;
+    border-right-style: none;
+    width: 150px;
+    height: 20px;
+    font-size: 14px;
+    font-style: italic;
+    font-family: var(--fonte-principal);
+}
+
+/*posicionando e determinando tamanho do icone de calendario*/
+.container_calendario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 120px;
+    width: 200px;
+    margin-left: 100px;
+}
+
+/*posicionando e determinando tamanho do icone de calendario*/
+.calendario{
+    height: 40px;
+    width: 40px;
+    margin-top: 30px;
+}
+
+/*estillizando botão de meses*/
+.btn_meses{
+    background-color: #000000;
+    color: var(--branco-logo);
+    border: none;
+    font-family: var(--fonte-principal);
+    font-style: normal;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 20px;
+    width: 70px;
+    height: 30px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+/*posicionando icone de abrir meses*/
+.expandir_meses{
+    text-align: center;
+    cursor: pointer;
+}
+
+/*posicionando container de cores*/
+.cores_alerta{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: none;
+    margin-bottom: 450px;
+    height: 60px;
+    width: 140px;
+}
+
+/*estilizando cores de alerta*/
+.verde{
+    height: 10px;
+    width: 50px;
+    background-color: green;
+    border: 1px solid rgb(0, 34, 0);
+    margin-top: 5px;
+    margin-left: 75px;
+    border-radius: 30px;
+}
+
+/*estilizando cores de alerta*/
+.azul{
+    height: 10px;
+    width: 50px;
+    background-color: blue;
+    border: 1px solid rgb(1, 1, 70);
+    margin-top: 10px;
+    margin-left: 75px;
+    border-radius: 30px;
+}
+
+/*estilizando cores de alerta*/
+.vermelho{
+    height: 10px;
+    width: 50px;
+    background-color: red;
+    border: 1px solid rgb(44, 1, 1);
+    margin-top: 10px;
+    margin-left: 75px;
+    border-radius: 30px;
+}
+ /*posicionando descrição dos alertas*/
+ .descricao_alerta{
+    height: 60px;
+    width: 760px;
+    font-family: var(--fonte-principal);
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+ }
+
+ /*determinando tamanho do grafico*/
+ .myChart{
+    width: 700px;
+    height: 900px;
+ }
+
+ /*estilizando mensagem "Para você"*/
+.para_voce{
+    font-size: 35px;
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    margin-left: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px ;
+}
+
+/*estilizando e posicionando container de sugestões de artigos*/
+.container_sugestoes{
+    background: var(--preto-background);
+    width: 900px;
+    height: 700px;
+    border-radius: 60px;
+    margin-left: 170px;
+    margin-bottom: 40px;
+}
+
+/*posicionando video sugestão*/
+.video_sugestao{
+    margin-top: 30px;
+    margin-left: 180px;
+}
+
+/*posicionando footer*/
+.footer{
+    text-align: center;
+    font-family: var(--fonte-principal);
+}
+
+
+

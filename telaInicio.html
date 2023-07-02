@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início</title>
+</head>
+<link href="./style.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins&family=Roboto:wght@500;900&display=swap" rel="stylesheet">
+<body>
+        <div class="div_header">  
+            <h1 class="logo">SmartCash</h1>
+            <img class="pesquisar" src="./assets/imagens/Pesquisar.png" alt="Pesquisar">
+            <img class="usuario" src="./assets/imagens/Usuário.png" alt="Usuário">
+        </div>
+        <div class="expandir_menu">
+        <img class="expandir_perfil" src="./assets/imagens/Botão expandir Perfil.png" alt="Perfil">
+        </div>
+        <div class="boas_vindas">
+            <h2 class="mensagem_boasVindas">Olá, Jeovane</h2>
+        </div>
+        <div class="nav">
+            <div class="div_home">
+                <h3 class="home">Home</h3>
+            </div>
+            <div class="div_anexar">
+                <h3 class="anexar">Anexar</h3>
+            </div>
+            <div class="div_contas">
+                <h3 class="contas">Contas</h3>
+            </div>
+            <div class="div_extrato">
+                <h3 class="extrato">Extrato</h3>
+            </div>
+        </div>
+        <div class="container_dashboard">
+            <div class="div_container">
+                <div class="div_graficos">
+                   <img class="graficos" src="./assets/imagens/Ícon Gráfico.svg" alt="Gráficos">
+                </div>
+                <div class="gastos_mensais">Informe seu teto de gastos
+                <input class="input_gastos" type="text" placeholder="R$">
+                </div>
+            <div class="container_calendario">
+                <img class="calendario" src="./assets/imagens/Botão para abrir meses 2.svg" alt="">
+                <button class="btn_meses">ABR</button>
+                <img class="expandir_meses" src="./assets/imagens/Botão expandir Perfil.png" alt="">
+            </div>
+            </div>
+            <div class="cores_alerta">
+                <div class="verde"></div> 
+                <div class="azul"></div>
+                <div class="vermelho"></div>
+            </div>
+            <div class="descricao_alerta">
+                <h3 class="econo_verde">Economizando</h3>
+                <h3 class="reg_azul">Regular</h3>
+                <h3 class="acim_vermelho">Acima do teto de gastos</h3>
+                    <div class="myChart">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+        </div>
+        <div class="mensagem_paraVoce">
+            <h2 class="para_voce">Para você</h2>
+        </div>
+        <div class="container_sugestoes">
+            <iframe class="video_sugestao" width="550" height="300" src="https://www.youtube.com/embed/x4GjlfW0foY" title="EU FIQUEI RICA ASSIM: PASSO A PASSO DE PLANEJAMENTO FINANCEIRO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            
+            <iframe class="video_sugestao" width="550" height="300" src="https://www.youtube.com/embed/H0sSgsaDst8" title="Nathalia Arcuri | SEGREDOS FINANCEIROS PARA ENRIQUECER DO ZERO - Me Poupe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <footer class="footer">SmartCash© 2023</footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+        <script>
+          const ctx = document.getElementById('myChart');
+        
+          new Chart(ctx, {
+            type: 'line',
+            data: {
+              labels: ['Semana 1', 'Semana 2', 'Semana 3', 'Semana 4'],
+              datasets: [{
+                label: 'Progresso no mensal',
+                data: [55, 80, 25, 50, 100],
+                borderWidth:2,
+                backgroundColor: 'black',
+                borderColor:'black'
+              }]
+            },
+            options: {
+              scales: {
+                y: {
+                  beginAtZero: true
+                }
+              }
+            }
+          });
+        </script>

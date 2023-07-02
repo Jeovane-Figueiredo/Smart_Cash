@@ -1,0 +1,181 @@
+/*criando variaveis a serem usadas no código*/
+:root {
+    --branco-logo: #FFFFFF;
+    --preto-logo: #000000;
+    --preto-background: #000000;
+    --cinza-background: #EAE7DB;
+    --amarelo-principal: #FBFF2C;
+    --fonte-principal: 'Roboto';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*determininado posicionamento do logo e cor do background*/
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--preto-background);
+}
+
+/*estilizando logo*/
+.logo {
+    text-align: center;
+    width: auto;
+    height: auto;
+    color: var(--branco-logo);
+    font-family: var(--fonte-principal);
+    font-size: 42px;
+    font-weight: 900;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+/*determinando posicionamento do container que contém a mensagem "Olá! Seja bem vindo de volta."*/
+.container_principal {
+    display: inline-flex;
+    width: 1225px;
+    box-sizing: border-box;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 14px 40px 5px 40px;
+    justify-content: center;
+    align-items: first baseline;
+}
+
+/*estilizando texto "Olá!"*/
+.container_pai .subtitulo_ola {
+    color: var(--branco-logo);
+    font-family: var(--fonte-principal);
+    font-size: 33px;
+    font-weight: 500;
+    text-align:left;
+}
+
+
+/*estilizando texto "Seja bem vindo de volta."*/
+.container_pai .subtitulo {
+    color: var(--branco-logo);
+    font-family: var(--fonte-principal);
+    font-size: 33px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+/*determinando e estilizando container de area de login*/
+.login{
+    background: var(--amarelo-principal);
+    width: 268px;
+    height: 450px;
+    border-radius: 30px;
+    font-family: var(--fonte-principal);
+    font-style: normal;
+    border-radius: 30px;
+    padding: 50px;
+    align-items: center;
+    color: var(--preto-background);
+    margin-top: 10px;
+    margin-bottom: 50px;
+    }
+/*determinando e estilizando texto de login*/
+    .faca_login{
+        text-align: center;
+        font-style: normal;
+        font-size: 25px;
+        font-weight: 500;
+        margin-top: 35px;
+        margin-bottom: 50px;
+    }
+
+    /*determinando e estilizando input email*/
+    .input_email{
+        background-color:transparent;
+        border-color: var(--preto-background);
+        border-bottom-style: 1px;
+        border-top-style:none;
+        border-left-style: none;
+        border-right-style: none;
+        width: 250px;
+        height: 25px;
+        margin-bottom: 50px;
+        font-size: 14px;
+        font-style: italic;
+        font-family: var(--fonte-principal);
+    }
+
+     /*determinando e estilizando input senha*/
+    .input_senha{
+        background-color:transparent;
+        border-color: var(--preto-background);
+        border-bottom-style: 1px;
+        border-top-style:none;
+        border-left-style: none;
+        border-right-style: none;
+        width: 250px;
+        height: 25px;
+        font-size: 14px;
+        font-style: italic;
+        font-family: var(--fonte-principal);
+    }
+
+     /*determinando e estilizando texto de "Esqueceu senha?"*/
+    .esqueceu_senha{
+        text-align: center;
+        font-style: normal;
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 10px;
+        margin-bottom: 25px;
+        cursor: pointer;
+    }
+
+    /*alinhando botão no centro*/
+    .btn{
+        text-align: center;
+    }
+
+    /*estilizando o botão*/
+    .btn .btn_login{
+        background: var(--preto-background);
+        color: var(--branco-logo);
+        border-radius: 20px;
+        width: 117px;
+        height: 44px;
+        flex-shrink: 0;
+        border: none;
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 20px;
+        cursor: pointer;
+        
+    }
+
+    /*dando efeito de clique no botão*/
+    .btn_login:active {
+        box-shadow: box-shadow 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+        transform: translateY(4px);
+    }
+
+    .btn_a{
+        text-decoration: none;
+        color: var(--branco-logo);
+    }
+
+
+    .img_login{
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .img_google{
+        margin-right: 21px;
+        cursor: pointer;
+    }
+
+    .img_facebook{
+        margin-left: 21px;
+        cursor: pointer;
+    }
